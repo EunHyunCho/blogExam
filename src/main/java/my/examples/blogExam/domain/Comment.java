@@ -10,4 +10,8 @@ public class Comment {
 
     private Account account;
     private Post post;
+
+    public Comment() {
+        wirteDate =  new Date();
+    }
 }

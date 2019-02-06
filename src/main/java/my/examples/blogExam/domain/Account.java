@@ -1,6 +1,7 @@
 package my.examples.blogExam.domain;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 public class Account {
@@ -12,5 +13,10 @@ public class Account {
     private String email;
 
     private Blog blog;
-    private Set<Role> role;
+    private Set<Role> roles;
+
+    public Account() {
+        createDate = new Date();
+        roles = new HashSet<>();
+    }
 }
